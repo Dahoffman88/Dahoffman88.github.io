@@ -31,49 +31,49 @@
 	<Accounts>
 			<Account Name='svcUUBizTalkHost-T2'>
 				<sAMAccountName>EXCHANGE-TEST\svcUUBizTalkHost-T2</sAMAccountName>
-				<Password>LH1a3wxECuXL7h6U93IY</Password>
+				<Password></Password>
 				<Description>TEST BizTalk Host serviceaccount</Description>
 				<OU>OU=Users,OU=Core,DC=exchange-test,DC=its,DC=uu,DC=se</OU>
 			</Account>
 			<Account Name='svcBTHostAD-T2'>
 				<sAMAccountName>EXCHANGE-TEST\svcBTHostAD-T2</sAMAccountName>
-				<Password>TWJx4tfXUu21JfmJgK8N</Password>
+				<Password></Password>
 				<Description>TEST BizTalk AD Host serviceaccount</Description>
 				<OU>OU=Users,OU=Core,DC=exchange-test,DC=its,DC=uu,DC=se</OU>
 			</Account>
 			<Account Name='svcUUBAMNot-T2'>
 				<sAMAccountName>EXCHANGE-TEST\svcUUBAMNot-T2</sAMAccountName>
-				<Password>9x91VbE1uWINY1Bed88c</Password>
+				<Password>9</Password>
 				<Description>TEST BizTalk Notification serviceaccount</Description>
 				<OU>OU=Users,OU=Core,DC=exchange-test,DC=its,DC=uu,DC=se</OU>
 			</Account>
 			<Account Name='svcUUBizBAMApp-T2'>
 				<sAMAccountName>EXCHANGE-TEST\svcUUBizBAMApp-T2</sAMAccountName>
-				<Password>xJegAs9KVhSA9tPCfeoi</Password>
+				<Password></Password>
 				<Description>TEST BizTalk BAM Application User serviceaccount</Description>
 				<OU>OU=Users,OU=Core,DC=exchange-test,DC=its,DC=uu,DC=se</OU>
 			</Account>
 			<Account Name='svcUUBizBAMWeb-T2'>
 				<sAMAccountName>EXCHANGE-TEST\svcUUBizBAMWeb-T2</sAMAccountName>
-				<Password>HaCOpoUgSlRHszecjfZY</Password>
+				<Password></Password>
 				<Description>TEST BizTalk BAM Webservice serviceaccount</Description>
 				<OU>OU=Users,OU=Core,DC=exchange-test,DC=its,DC=uu,DC=se</OU>
 			</Account>
 			<Account Name='svcUUBizIsoHost-T2'>
 				<sAMAccountName>EXCHANGE-TEST\svcUUBizIsoHost-T2</sAMAccountName>
-				<Password>e5k2L3rV76MMgjbpQPg0</Password>
+				<Password></Password>
 				<Description>TEST BizTalk Isolated Host serviceaccount </Description>
 				<OU>OU=Users,OU=Core,DC=exchange-test,DC=its,DC=uu,DC=se</OU>
 			</Account>
 			<Account Name='svcUUReuService-T2'>
 				<sAMAccountName>EXCHANGE-TEST\svcUUReuService-T2</sAMAccountName>
-				<Password>AAGZUtHRuYDne8cBXUeB</Password>
+				<Password></Password>
 				<Description>TEST BizTalk Rules Engine User serviceaccount </Description>
 				<OU>OU=Users,OU=Core,DC=exchange-test,DC=its,DC=uu,DC=se</OU>
 			</Account>
 			<Account Name='svcUUSsoService-T2'>
 				<sAMAccountName>EXCHANGE-TEST\svcUUSsoService-T2</sAMAccountName>
-				<Password>WFKKO7xSV0qnVkB1Rcu4</Password>
+				<Password></Password>
 				<Description>TEST BizTalk SSO serviceaccount </Description>
 				<OU>OU=Users,OU=Core,DC=exchange-test,DC=its,DC=uu,DC=se</OU>
 			</Account>
