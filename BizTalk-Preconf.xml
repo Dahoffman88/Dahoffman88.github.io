@@ -1,29 +1,29 @@
 <Settings> 
 	<General>
 		<BizTalk>
-			<BizTalkServer1>UUC-BIZ021-T</BizTalkServer1>
-			<BizTalkServer2>UUC-BIZ022-T</BizTalkServer2>
+			<BizTalkServer1></BizTalkServer1>
+			<BizTalkServer2></BizTalkServer2>
 		</BizTalk>
 		<SSO>
-			<SSOserver1>UUC-BIZ023-T</SSOserver1>
-			<SSOserver2>UUC-BIZ024-T</SSOserver2>
+			<SSOserver1></SSOserver1>
+			<SSOserver2></SSOserver2>
 		</SSO>
 		<Cluster>
-			<ClusternameBizTalk>UUC-BIZCLU021-T</ClusternameBizTalk>
-			<ClusternameSSO>UUC-SSOSRV021-T</ClusternameSSO>
+			<ClusternameBizTalk></ClusternameBizTalk>
+			<ClusternameSSO></ClusternameSSO>
 			<ClusterOU>OU=BizTalk,OU=Servers,OU=Core,DC=exchange-test,DC=its,DC=uu,DC=se</ClusterOU>
 		</Cluster>
 		<IPs>
-			<ClusterIPBizTalk>130.238.187.81</ClusterIPBizTalk>
-			<ClusterIPSSO>130.238.187.78</ClusterIPSSO>
+			<ClusterIPBizTalk></ClusterIPBizTalk>
+			<ClusterIPSSO></ClusterIPSSO>
 			<Subnetmask>255.255.255.0</Subnetmask>
-			<HB1BizTalk>172.16.201.11</HB1BizTalk>
-			<HB2BizTalk>172.16.201.12</HB2BizTalk>
-			<HB1SSO>172.16.201.13</HB1SSO>
-			<HB2SSO>172.16.201.14</HB2SSO>
+			<HB1BizTalk></HB1BizTalk>
+			<HB2BizTalk></HB2BizTalk>
+			<HB1SSO></HB1SSO>
+			<HB2SSO></HB2SSO>
 		</IPs>
 		<FileShare>
-			<Fileserver>UUC-BIZ025-T</Fileserver>
+			<Fileserver></Fileserver>
 			<WitnessDrive>E</WitnessDrive>
 			<WitnessName>-Witness</WitnessName>
 		</FileShare>
