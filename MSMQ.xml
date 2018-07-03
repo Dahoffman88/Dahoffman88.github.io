@@ -1,0 +1,26 @@
+<MSMQ> 
+	<Queue Name='Testqueu1'>
+		<Label>private$\TESTQUEU1</Label>
+		<Read>exchange-test\_jonam895</Read>
+		<Write>exchange-test\_krist674</Write>
+		<Full>exchange-test\_antho167</Full>
+	</Queue>
+	<Queue Name='Testqueu2'>
+		<Label>private$\TESTQUEU2</Label>
+		<Read>exchange-test\_krist674</Read>
+		<Write>exchange-test\_jonam895</Write>
+		<Full>exchange-test\_antho167</Full>
+	</Queue>
+	<Queue Name='Testqueu3'>
+		<Label>private$\TESTQUEU3</Label>
+		<Read>exchange-test\_jonam895</Read>
+		<Write>exchange-test\_krist674</Write>
+		<Full>exchange-test\_antho167</Full>
+	</Queue> 
+	<Queue Name='Testqueu4'>
+		<Label>private$\TESTQUEU4</Label>
+		<Read>exchange-test\_krist674</Read>
+		<Write>exchange-test\_jonam895</Write>
+		<Full>exchange-test\_antho167</Full>
+	</Queue>
+</MSMQ>

@@ -1,0 +1,142 @@
+<Settings> 
+	<General>
+		<BizTalk>
+			<BizTalkServer1>UUC-BIZ021-T</BizTalkServer1>
+			<BizTalkServer2>UUC-BIZ022-T</BizTalkServer2>
+		</BizTalk>
+		<SSO>
+			<SSOserver1>UUC-BIZ023-T</SSOserver1>
+			<SSOserver2>UUC-BIZ024-T</SSOserver2>
+		</SSO>
+		<Cluster>
+			<ClusternameBizTalk>UUC-BIZCLU021-T</ClusternameBizTalk>
+			<ClusternameSSO>UUC-SSOSRV021-T</ClusternameSSO>
+			<ClusterOU>OU=BizTalk,OU=Servers,OU=Core,DC=exchange-test,DC=its,DC=uu,DC=se</ClusterOU>
+		</Cluster>
+		<IPs>
+			<ClusterIPBizTalk>130.238.187.81</ClusterIPBizTalk>
+			<ClusterIPSSO>130.238.187.78</ClusterIPSSO>
+			<Subnetmask>255.255.255.0</Subnetmask>
+			<HB1BizTalk>172.16.201.11</HB1BizTalk>
+			<HB2BizTalk>172.16.201.12</HB2BizTalk>
+			<HB1SSO>172.16.201.13</HB1SSO>
+			<HB2SSO>172.16.201.14</HB2SSO>
+		</IPs>
+		<FileShare>
+			<Fileserver>UUC-BIZ025-T</Fileserver>
+			<WitnessDrive>E</WitnessDrive>
+			<WitnessName>-Witness</WitnessName>
+		</FileShare>
+	</General>
+	<Accounts>
+			<Account Name='svcUUBizTalkHost-T2'>
+				<sAMAccountName>EXCHANGE-TEST\svcUUBizTalkHost-T2</sAMAccountName>
+				<Password>LH1a3wxECuXL7h6U93IY</Password>
+				<Description>TEST BizTalk Host serviceaccount</Description>
+				<OU>OU=Users,OU=Core,DC=exchange-test,DC=its,DC=uu,DC=se</OU>
+			</Account>
+			<Account Name='svcBTHostAD-T2'>
+				<sAMAccountName>EXCHANGE-TEST\svcBTHostAD-T2</sAMAccountName>
+				<Password>TWJx4tfXUu21JfmJgK8N</Password>
+				<Description>TEST BizTalk AD Host serviceaccount</Description>
+				<OU>OU=Users,OU=Core,DC=exchange-test,DC=its,DC=uu,DC=se</OU>
+			</Account>
+			<Account Name='svcUUBAMNot-T2'>
+				<sAMAccountName>EXCHANGE-TEST\svcUUBAMNot-T2</sAMAccountName>
+				<Password>9x91VbE1uWINY1Bed88c</Password>
+				<Description>TEST BizTalk Notification serviceaccount</Description>
+				<OU>OU=Users,OU=Core,DC=exchange-test,DC=its,DC=uu,DC=se</OU>
+			</Account>
+			<Account Name='svcUUBizBAMApp-T2'>
+				<sAMAccountName>EXCHANGE-TEST\svcUUBizBAMApp-T2</sAMAccountName>
+				<Password>xJegAs9KVhSA9tPCfeoi</Password>
+				<Description>TEST BizTalk BAM Application User serviceaccount</Description>
+				<OU>OU=Users,OU=Core,DC=exchange-test,DC=its,DC=uu,DC=se</OU>
+			</Account>
+			<Account Name='svcUUBizBAMWeb-T2'>
+				<sAMAccountName>EXCHANGE-TEST\svcUUBizBAMWeb-T2</sAMAccountName>
+				<Password>HaCOpoUgSlRHszecjfZY</Password>
+				<Description>TEST BizTalk BAM Webservice serviceaccount</Description>
+				<OU>OU=Users,OU=Core,DC=exchange-test,DC=its,DC=uu,DC=se</OU>
+			</Account>
+			<Account Name='svcUUBizIsoHost-T2'>
+				<sAMAccountName>EXCHANGE-TEST\svcUUBizIsoHost-T2</sAMAccountName>
+				<Password>e5k2L3rV76MMgjbpQPg0</Password>
+				<Description>TEST BizTalk Isolated Host serviceaccount </Description>
+				<OU>OU=Users,OU=Core,DC=exchange-test,DC=its,DC=uu,DC=se</OU>
+			</Account>
+			<Account Name='svcUUReuService-T2'>
+				<sAMAccountName>EXCHANGE-TEST\svcUUReuService-T2</sAMAccountName>
+				<Password>AAGZUtHRuYDne8cBXUeB</Password>
+				<Description>TEST BizTalk Rules Engine User serviceaccount </Description>
+				<OU>OU=Users,OU=Core,DC=exchange-test,DC=its,DC=uu,DC=se</OU>
+			</Account>
+			<Account Name='svcUUSsoService-T2'>
+				<sAMAccountName>EXCHANGE-TEST\svcUUSsoService-T2</sAMAccountName>
+				<Password>WFKKO7xSV0qnVkB1Rcu4</Password>
+				<Description>TEST BizTalk SSO serviceaccount </Description>
+				<OU>OU=Users,OU=Core,DC=exchange-test,DC=its,DC=uu,DC=se</OU>
+			</Account>
+	</Accounts>
+	<Groups>
+			<Group Name='BizTalk SSO Affiliate Administrators'>
+				<sAMAccountName>UU-BizTalk2016-SSO_Affiliate_Administrators-T2</sAMAccountName>
+				<Description>TEST BizTalk SSO Affiliate Administrators</Description>
+				<Members>
+					<Member>svcBTHostAD-T2</Member>
+					<Member>svcUUBizTalkHost-T2</Member>
+					<Member>svcUUBizIsoHost-T2</Member>
+					<Member>UU-BizTalk2016-BizTalk Server Administrators-T2</Member>
+				</Members>
+				<OU>OU=Groups,OU=Core,DC=exchange-test,DC=its,DC=uu,DC=se</OU>
+			</Group>
+			<Group Name='BizTalk Application Users'>
+				<sAMAccountName>UU-BizTalk2016-BizTalk Application Users-T2</sAMAccountName>
+				<Description>TEST BizTalk Application Users</Description>
+				<Members>
+					<Member>svcUUBizTalkHost-T2</Member>
+					<Member>svcBTHostAD-T2</Member>
+				</Members>
+				<OU>OU=Groups,OU=Core,DC=exchange-test,DC=its,DC=uu,DC=se</OU>
+			</Group>
+			<Group Name='BizTalk BAM Portal Users'>
+				<sAMAccountName>UU-BizTalk2016-BizTalk BAM Portal Users-T2</sAMAccountName>
+				<Description>TEST BizTalk BizTalk BAM Portal Users</Description>
+				<Members>
+					<Member>svcUUBizIsoHost-T2</Member>
+				</Members>
+				<OU>OU=Groups,OU=Core,DC=exchange-test,DC=its,DC=uu,DC=se</OU>
+			</Group>
+			<Group Name='BizTalk Isolated Host Users'>
+				<sAMAccountName>UU-BizTalk2016-BizTalk Isolated Host Users-T2</sAMAccountName>
+				<Description>TEST BizTalk Isolated Host Users</Description>
+				<Members>
+					<Member>svcUUBizIsoHost-T2</Member>
+				</Members>
+				<OU>OU=Groups,OU=Core,DC=exchange-test,DC=its,DC=uu,DC=se</OU>
+			</Group>
+			<Group Name='BizTalk Server B2B Operators'>
+				<sAMAccountName>UU-BizTalk2016-BizTalk Server B2B Operators-T2</sAMAccountName>
+				<Description>TEST BizTalk Server B2B Operators</Description>
+				<OU>OU=Groups,OU=Core,DC=exchange-test,DC=its,DC=uu,DC=se</OU>
+			</Group>
+			<Group Name='BizTalk Server Operators'>
+				<sAMAccountName>UU-BizTalk2016-BizTalk Server Operators-T2</sAMAccountName>
+				<Description>TEST BizTalk Server Operators</Description>
+				<OU>OU=Groups,OU=Core,DC=exchange-test,DC=its,DC=uu,DC=se</OU>
+			</Group>
+			<Group Name='BizTalk SSO_Administrators'>
+				<sAMAccountName>UU-BizTalk2016-SSO_Administrators-T2</sAMAccountName>
+				<Description>TEST BizTalk SSO_Administrators-T</Description>
+				<Members>
+					<Member>svcUUSsoService-T2</Member>
+				</Members>
+				<OU>OU=Groups,OU=Core,DC=exchange-test,DC=its,DC=uu,DC=se</OU>
+			</Group>
+			<Group Name='BizTalk Server Administrators'>
+				<sAMAccountName>UU-BizTalk2016-BizTalk Server Administrators-T2</sAMAccountName>
+				<Description>TEST BizTalk Server administrators</Description>
+				<OU>OU=Groups,OU=Core,DC=exchange-test,DC=its,DC=uu,DC=se</OU>
+			</Group>
+	</Groups>
+</Settings>
