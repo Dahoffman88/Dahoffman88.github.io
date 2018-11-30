@@ -1,6 +1,6 @@
 ﻿# Configure Variables
     
-    [xml] $xml=Get-Content \\uuc-biz008-t\setup\Script\BizTalk-Preconf.xml
+    [xml] $xml=Get-Content \\....\setup\Script\BizTalk-Preconf.xml
     Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 
     # SQL Servers
